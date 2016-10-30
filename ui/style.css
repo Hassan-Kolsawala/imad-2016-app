@@ -22,13 +22,23 @@
 
 	}
 	h1{
-		text-align: center;
+		text-align: left;
 		color: white;
 		font-size: 5em;
 		padding-top: 50px;
-		font-family: 'chewy' ,cursive;
+		font-family: 'montez' ,cursive;
+			 position: relative;
+    -webkit-animation-name: schoolname; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 10s; /* Safari 4.0 - 8.0 */
+    animation-name: schoolname;
+    animation-duration: 8s;
 
 	}
+	@keyframes schoolname {
+    0%   { left:600px; top:0;}
+    100%  { left:0; top:0;}
+   
+}
 	
     li{
     	
