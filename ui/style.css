@@ -20,3 +20,136 @@ body {
     height: 200px;
 }
 
+	body{
+		 background-image: url("/ui/transient.jpg");
+		  background-repeat: repeat-y;
+
+	}
+	h1{
+		text-align: center;
+		color: white;
+		font-size: 5em;
+		padding-top: 50px;
+		font-family: 'chewy' ,cursive;
+
+	}
+	
+    li{
+    	
+    	display:inline-block;
+    	margin: 5px 5px 5px 5px;
+    	padding: 5px;
+    	margin-right: 10px;
+    	color: white;	
+    	padding : 10px;
+    	font-family: 'Montez', cursive;
+    
+    		cursor: pointer;
+    }
+    li:hover{
+    	background-color: 	rgb(51, 51, 255);
+    	border-radius: 100px;
+    	transition: 1.5s;
+    	
+
+    }
+    a:link{
+        color:white;
+        text-decoration:none;
+    }
+     a:visited{
+        color:white;
+        text-decoration:none;
+    }
+    header{
+    	margin-top: -10px;
+    	margin-left: -10px;
+    }
+   nav {
+    float: left;
+    max-width: 200px;
+    height: 500px;
+    margin: 0;
+    padding: -10px;
+
+    
+	    }
+
+    article {
+    margin-left: 170px;
+    border-left: 1px solid black;
+    padding: 1em;
+    overflow: hidden;
+
+}
+h1{
+	font-family: 'Montez', cursive;
+	font-size: 3em;
+	
+}
+h3{
+	vertical-align:middle; 
+	text-align:center;
+	margin-top: 70px;
+	font-size: 50px;
+	font-family: 'Montez', cursive;
+		cursor: pointer;
+}
+
+div.article{
+	margin : auto;
+	text-align: left;
+}
+div.container{
+	margin :auto;
+	margin-right: 170px; 
+	margin-left: 190px;
+	height: 500px;
+	width: 900px;
+	
+	padding: 10px;
+	
+	
+}   
+
+  
+div.cont2{
+	margin-top: 10px;
+	position : relative;
+	padding: 10px;
+	margin-left: 10px;
+	height: 200px;
+	width: 200px;
+	float:left;
+	
+	padding: 5px;
+	background-color:	rgb(51, 0, 0);
+		border-radius: 25px;
+		transition: 2s;
+		vertical-align: middle; 
+	text-align: center;
+	display: inline-block;
+
+}   
+  
+
+div.cont2:hover
+{
+	border-radius: 100px;
+	background-color: black;
+}
+footer {
+    padding-top: 1em;
+    border-bottom: 100px;
+   margin-top: 5px;
+   margin-bottom : -100px;
+   
+    color: white;
+    font-size: 30px;
+    background-color: black;
+    clear: left;
+    text-align: center;
+
+} 
+
+ 
