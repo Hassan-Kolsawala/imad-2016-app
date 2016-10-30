@@ -20,7 +20,7 @@ body {
     height: 200px;
 }
 
-	body{
+	.maincontainer{
 		 background-image: url("/ui/transient.jpg");
 		  background-repeat: repeat-y;
 
