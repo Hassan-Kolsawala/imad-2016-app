@@ -4,8 +4,8 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-var articless = {
- 'article-one': {
+
+var articleone= {
     title : 'home',
     containers : `
     	
@@ -40,8 +40,8 @@ var articless = {
     <p style="font-size:2em; color: 	rgb(26, 0, 0);">Dreamstrack is all about follwing your path towards your dreams.</p>
     <p style="font-size:2em;color: 	rgb(26, 0, 0);">We provide education assistance to willing students.
     </p>`
-}
 };
+
 
 function createtemplate (data) {
     var title=data.title;
@@ -102,9 +102,8 @@ return htmltemplate;
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-app.get('/:articlename',function (req,res) { 
-    var articlename=req.params.articlename;
-     res.send(createtemplate(articless[articlename]));
+app.get('/article-one',function (req,res) { 
+  res.send(createtemplate(article-one));
 });
 
 app.get('/ui/style.css', function (req, res) {
