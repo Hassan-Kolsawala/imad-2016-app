@@ -28,8 +28,7 @@
 		padding-top: 50px;
 		font-family: 'montez' ,cursive;
 			 position: relative;
-    -webkit-animation-name: schoolname; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 10s; /* Safari 4.0 - 8.0 */
+  
     animation-name: schoolname;
     animation-duration: 8s;
 
@@ -44,7 +43,7 @@
     	
     	display:inline-block;
     	margin: 5px 5px 5px 5px;
-    	padding: 5px;
+    	
     	margin-right: 10px;
     	color: white;	
     	padding : 10px;
@@ -98,11 +97,11 @@ h3{
 		cursor: pointer;
 }
 
-div.article{
+.article{
 	margin : auto;
 	text-align: left;
 }
-div.container{
+.container{
 	margin :auto;
 	margin-right: 170px; 
 	margin-left: 190px;
