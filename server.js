@@ -153,12 +153,6 @@ app.get('/:articlename',function (req,res) {
     var articlename=req.params.articlename;
      res.send(createtemplate(articless[articlename]));
 });
-app.get('/article-two',function (req,res) { 
-    res.send('article-two url is served here');
-});
-app.get('/article-three',function (req,res) { 
-    res.send('article-three url is served here');
-});
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
