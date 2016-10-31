@@ -133,7 +133,7 @@ ${title}
 </article>
 
 <div class="container">
-	${container}
+	${containers}
 		
 </div>
 <footer>Copyright © dreamstrack.com</footer>
