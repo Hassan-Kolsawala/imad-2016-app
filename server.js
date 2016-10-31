@@ -5,7 +5,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 var articlething = {
- 'article-one' : {
+ 'home' : {
     title : 'home',
     containers : `
     	
@@ -41,7 +41,7 @@ var articlething = {
     <p style="font-size:2em;color: 	rgb(26, 0, 0);">We provide education assistance to willing students.
     </p>`
  },
- 'article-two' : {
+ 'admission' : {
       title : 'admission',
     containers : 'hi ' ,
     
@@ -114,8 +114,8 @@ var htmltemplate = `
         <li style="font-size: 3em;">Hassan</li>
         <li style="float:right; font-size:3em;">contact</li>
         <li style="float:right; font-size:3em;">management</li>
-        <li style="float:right; font-size:3em;">admission</li>
-        <li style="float:right ;font-size:3em;"><a href="/article-one" >Home</a></li>
+        <li style="float:right; font-size:3em;"><a href="/admission" >admission</li>
+        <li style="float:right ;font-size:3em;"><a href="/home" >Home</a></li>
         </ul>
         </header>
         <nav>
