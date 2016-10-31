@@ -149,7 +149,7 @@ footer {
     background-color: black;
     clear: left;
     text-align: center;
-    
+    display : inline-block;
 
 } 
 
