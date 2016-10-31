@@ -24,7 +24,7 @@
 	h1{
 		text-align: left;
 		color: white;
-		font-size: 5em;
+		font-size: 3em;
 		padding-top: 50px;
 		font-family: 'montez' ,cursive;
 			 position: relative;
@@ -141,7 +141,7 @@ div.cont2:hover
 	background-color: black;
 }
 footer {
-    padding-top: 1em;
+    padding-top: 0.5em;
     border-bottom: 100px;
    margin-top: 5px;
    margin-bottom : -100px;
