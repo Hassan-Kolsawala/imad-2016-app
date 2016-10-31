@@ -4,10 +4,11 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-var articleone = {
-    title : 'admission',
+var articless = {
+ 'article-one': {
+    title : 'home',
     container : `
-    	<h2></h2>
+    	
 		<div class="cont2">
 		<h3 style="color:	rgb(255, 255, 255);">vision</h3>
 		</div>
@@ -33,6 +34,18 @@ var articleone = {
 <h3 style="color:	rgb(255, 255, 255);">fee payment</h3>
 </div> `
 ,
+
+    article :`  
+    <h1 style="color:	rgb(26, 0, 0);" class="schoolname">Modern School</h1>
+    <p style="font-size:2em; color: 	rgb(26, 0, 0);">Dreamstrack is all about follwing your path towards your dreams.</p>
+    <p style="font-size:2em;color: 	rgb(26, 0, 0);">We provide education assistance to willing students.
+    </p>`
+},
+ 'article-two' : {
+     title : 'admission',
+    container : ` `
+    ,
+
 
     article :`
                 <h2>
@@ -73,6 +86,8 @@ var articleone = {
 					vocational courses as one of the optional<br>subjects.
 				</p> `
 
+}
+    
 };
 function createtemplate (data) {
     var title=data.title;
@@ -134,8 +149,9 @@ return htmltemplate;
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-app.get('/article-one',function (req,res) { 
-     res.send(createtemplate(articleone));
+app.get('/:articlename',function (req,res) { 
+    var articlename=req.params.articlename;
+     res.send(createtemplate(articless[articlename]));
 });
 app.get('/article-two',function (req,res) { 
     res.send('article-two url is served here');
