@@ -114,7 +114,7 @@ var htmltemplate = `
         <li style="font-size: 3em;">Hassan</li>
         <li style="float:right; font-size:3em;">contact</li>
         <li style="float:right; font-size:3em;">management</li>
-        <li style="float:right; font-size:3em;"><a href="/admission" >admission</li>
+        <li style="float:right; font-size:3em;"><a href="/admission" >admission</a></li>
         <li style="float:right ;font-size:3em;"><a href="/home" >Home</a></li>
         </ul>
         </header>
