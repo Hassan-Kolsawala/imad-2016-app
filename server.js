@@ -43,7 +43,7 @@ var articlething = {
  },
  'admission' : {
       title : 'admission',
-    containers : 'hi ' ,
+    containers : ' ' ,
     
     article :`
                 <h2>
