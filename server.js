@@ -7,7 +7,7 @@ app.use(morgan('combined'));
 var articless = {
  'article-one': {
     title : 'home',
-    container : `
+    containers : `
     	
 		<div class="cont2">
 		<h3 style="color:	rgb(255, 255, 255);">vision</h3>
@@ -43,7 +43,7 @@ var articless = {
 },
  'article-two' : {
      title : 'admission',
-    container : ` `
+    containers : ` `
     ,
 
 
@@ -92,7 +92,7 @@ var articless = {
 function createtemplate (data) {
     var title=data.title;
     var article=data.article;
-    var container=data.container;
+    var containers=data.containers;
 var htmltemplate = `
 <html>
 
