@@ -4,8 +4,8 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-
-var articleone = {
+var articlething = {
+ 'article-one' : {
     title : 'home',
     containers : `
     	
@@ -40,6 +40,51 @@ var articleone = {
     <p style="font-size:2em; color: 	rgb(26, 0, 0);">Dreamstrack is all about follwing your path towards your dreams.</p>
     <p style="font-size:2em;color: 	rgb(26, 0, 0);">We provide education assistance to willing students.
     </p>`
+ },
+ 'article-two' : {
+      title : 'admission',
+    containers : 'hi ' ,
+    
+    article :`
+                <h2>
+                <strong>Admission</strong>
+                </h2>
+				
+				<p style="text-align: justify;">
+					<strong>Admission through KEA:</strong> It is for candidates of
+					Karnataka domicile only. A candidate who has passed the Qualifying
+					Exam (Q.E.) (12th Exam) with Physics and Mathematics as compulsory
+					subjects along with Chemistry / Bio-Technology / Biology /
+					Electronics / Computer Science as optional subjects with English as
+					one of the languages of study and obtained an aggregate minimum of
+					45% marks in the optional subjects in the Q. E. is eligible for
+					Engineering / Technology courses. 40% of marks in Q.E. in case of
+					SC, ST, Category-I and OBC Category candidates is considered.
+					Physics and Mathematics are compulsory subjects along with
+					Chemistry or Biotechnology or Biology. Based on the performance of
+					the candidates in Physics, Chemistry and Mathematics subjects in
+					both Common Entrance Test and the Qualifying Examination by taking
+					the marks in equal proportions, the Engineering rank list will be
+					prepared<br>and published. Based on their Rank student are
+					selected for admission.
+				</p>
+				<p style="text-align: justify;">
+					<strong>Admission through COMED-K:</strong> Both Karnataka and
+					non-Karnataka candidates can write COMED-K exam. The qualifying
+					examination prescribed for admission to B.E. is 2nd PUC or 10+2
+					higher secondary or equivalent Examination recognized by State /
+					Central Government. The last two years of study shall comprise of
+					Physics, Chemistry and Mathematics (PCM) with<br>English as a
+					compulsory subject. The General Merit Candidates should have passed
+					with a minimum aggregate of 45% marks (40% in respect of SC, ST and
+					OBC Candidates of Karnataka state) in Physics, Chemistry and
+					Mathematics (PCM) and should have passed these subjects
+					individually. Physics and Mathematics are compulsory subjects along
+					with Chemistry or Biotechnology or Biology or any other Technical
+					vocational courses as one of the optional<br>subjects.
+				</p> `
+
+ }
 };
 
 
@@ -102,8 +147,9 @@ return htmltemplate;
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-app.get('/article-one',function (req,res) { 
-  res.send(createtemplate(articleone));
+app.get('/:articlename',function (req,res) { 
+    var articlename=req.params.articlename;
+  res.send(createtemplate(articlething[articlename]));
 });
 
 app.get('/ui/style.css', function (req, res) {
