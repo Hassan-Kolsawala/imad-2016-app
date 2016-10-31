@@ -84,7 +84,8 @@ var articlething = {
 					vocational courses as one of the optional<br>subjects.
 				</p> `
 
- }
+ },
+ 
 };
 
 
