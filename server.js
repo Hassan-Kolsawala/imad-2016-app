@@ -51,9 +51,7 @@ var htmltemplate = `
 <html>
 
 <head >
-<title>
-${title}
-</title>
+<title>${title}</title>
 <link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Montez" rel="stylesheet"> 
  <link href="/ui/style.css" rel="stylesheet" />
