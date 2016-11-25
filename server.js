@@ -81,7 +81,7 @@ var articlething = {
 					Mathematics (PCM) and should have passed these subjects
 					individually. Physics and Mathematics are compulsory subjects along
 					with Chemistry or Biotechnology or Biology or any other Technical
-					vocational courses as one of the optional<br>subjects.
+					vocational courses as one of the optional<br>subjects my name is hassan i am student at msrit.
 				</p> `
 
  },
